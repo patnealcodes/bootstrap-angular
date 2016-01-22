@@ -7,6 +7,7 @@ module.exports = function(grunt) {
 		connect: {
 			server: {
 				options: {
+					base: 'app',
 					hostname: 'localhost',
 					open: true,
 					port: 1234,
@@ -18,12 +19,12 @@ module.exports = function(grunt) {
 		jshint: {
 			all: [
 				// include
-				'js/app/*.js',
-				'js/app/**/*.js',
+				'app/js/*.js',
+				'app/js/**/*.js',
 
 				// ignore
-				'!js/app/*.test.js',
-				'!js/app/**/*.test.js'
+				'!app/js/*.test.js',
+				'!app/js/**/*.test.js'
 			]
 		},
 
@@ -34,7 +35,7 @@ module.exports = function(grunt) {
 					sourcemap: 'none'
 				},
 				files: [
-					{ 'css/main.css': 'scss/main.scss' }
+					{ 'app/css/main.css': 'app/scss/main.scss' }
 				]
 			}
 		},
@@ -47,7 +48,7 @@ module.exports = function(grunt) {
 				}
 			},
 			sass: {
-				files: ['scss/*.scss'],
+				files: ['app/scss/*.scss'],
 				tasks: ['sass'],
 				options: {
 					livereload: true
@@ -56,12 +57,12 @@ module.exports = function(grunt) {
 			js: {
 				files: [
 					// include
-					'js/app/*.js',
-					'js/app/**/*.js',
+					'app/js/*.js',
+					'app/js/**/*.js',
 
 					// ignore
-					'!js/app/*.test.js',
-					'!js/app/**/*.test.js'
+					'!app/js/*.test.js',
+					'!app/js/**/*.test.js'
 				],
 				tasks: [
 					'jshint'

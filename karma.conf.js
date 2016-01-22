@@ -16,16 +16,16 @@ module.exports = function(config) {
 		// list of files / patterns to load in the browser
 		files: [
 			// library
-			'js/lib/jquery-min.js',
-			'js/lib/underscore-min.js',
+			'app/js/lib/jquery-min.js',
+			'app/js/lib/underscore-min.js',
 
 			// js files
-			'js/app/*.js',
-			'js/app/**/*.js',
+			'app/js/*.js',
+			'app/js/**/*.js',
 
 			// test files
-			'js/app/*.test.js',
-			'js/app/**/*.test.js'
+			'app/js/*.test.js',
+			'app/js/**/*.test.js'
 		],
 
 
