@@ -1,0 +1,22 @@
+{
+  "name": "boostrap-angular",
+  "description": "My bootstrap to set up basic projects (with angular)",
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "angular-ui-router": "~0.2.15"
+  },
+  "directory": "app/bower_components",
+  "authors": [
+    "Patrick Neal <apparently@patrickneal.codes>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/patnealcodes/bootstrap-angular",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
