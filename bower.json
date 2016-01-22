@@ -5,7 +5,9 @@
     "angular": "~1.4.0",
     "angular-route": "~1.4.0",
     "angular-mocks": "~1.4.0",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "jquery": "~2.2.0",
+    "underscore": "~1.8.3"
   },
   "directory": "app/bower_components",
   "authors": [
