@@ -16,6 +16,7 @@
 		"karma-phantomjs-launcher": "^0.2.3",
 		"phantomjs": "^1.9.19"
 	},
+	"license": "MIT",
 	"name": "patrickneal.codes",
 	"repository": "N/A",
 	"version": "1.0.0"
