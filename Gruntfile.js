@@ -23,6 +23,7 @@ module.exports = function(grunt) {
 				'app/js/**/*.js',
 
 				// ignore
+				'!app/js/lib/*.js',
 				'!app/js/*.test.js',
 				'!app/js/**/*.test.js'
 			]
@@ -61,6 +62,7 @@ module.exports = function(grunt) {
 					'app/js/**/*.js',
 
 					// ignore
+					'!app/js/lib/*.js',
 					'!app/js/*.test.js',
 					'!app/js/**/*.test.js'
 				],

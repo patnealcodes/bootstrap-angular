@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mainApp">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +10,16 @@
 </head>
 <body>
 
-	<!-- BODY CODE HERE -->
+	<div class="ui-view"></div>
 
 	<!-- Scripts -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/underscore/underscore-min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<!-- MainComponent -->
+	<script src="js/mainComponent/mainComponent.controller.js"></script>
 </body>
 </html>
