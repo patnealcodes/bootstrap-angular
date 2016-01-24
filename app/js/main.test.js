@@ -1,14 +1,31 @@
-describe('jQuery test', function() {
-	it('should let you use jquery', function() {
-		expect($('body').length).toBe(1);
-	});
-});
+describe('mainApp', function() {
+	beforeEach(module('mainApp'));
 
-describe('testFunction test', function() {
-	it('should work with numbers', function() {
-		expect(testFunction(1, 2)).toBe(3);
+	it('should exist', function() {
+		expect(angular.module('mainApp')).toBeDefined();
 	});
-	it('should work with strings', function() {
-		expect(testFunction('it ', 'works')).toBe('it works');
+
+	describe('states', function() {
+
+		var
+			$rootScope,
+			$state,
+			$location,
+			$httpBackend
+		;
+
+		beforeEach(
+			inject(
+				function(_$rootScope_, _$state_, _$location_) {
+					$rootScope = _$rootScope_;
+					$state = _$state_;
+					$location = _$location_;
+				}
+			)
+		);
+
+		it('should have "main" route set', function() {
+			expect($state.href('main')).toEqual('#/main');
+		});
 	});
 });

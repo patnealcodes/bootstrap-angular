@@ -1,18 +1,24 @@
 (function () {
 	'use strict';
 
-	angular
-		.module('mainApp')
-		.controller('MainComponentController', MainComponentController);
-
 	function MainComponentController() {
 
-		function makeSureItWorks() {
-			console.log('MainComponentController Works!');
-		}
+		var mainComponent = this;
 
-		makeSureItWorks();
+		mainComponent.triggered = false;
+
+		mainComponent.makeSureItWorks = function() {
+			mainComponent.triggered = true;
+			return 'MainComponentController Works!';
+		};
+
+		console.log(mainComponent.makeSureItWorks());
 	}
+
+	angular
+		.module('mainApp')
+		.controller('MainComponentController', MainComponentController)
+	;
 
 })();
 

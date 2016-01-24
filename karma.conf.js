@@ -15,13 +15,19 @@ module.exports = function(config) {
 
 		// list of files / patterns to load in the browser
 		files: [
-			// library
-			'app/js/lib/jquery-min.js',
-			'app/js/lib/underscore-min.js',
+			// libraries
+			'app/bower_components/jquery/dist/jquery.min.js',
+			'app/bower_components/underscore/underscore-min.js',
+			'app/bower_components/angular/angular.min.js',
+			'app/bower_components/angular-mocks/angular-mocks.js',
+			'app/bower_components/angular-ui-router/release/angular-ui-router.min.js',
 
 			// js files
 			'app/js/*.js',
 			'app/js/**/*.js',
+
+			// html files
+			'app/js/**/*.html',
 
 			// test files
 			'app/js/*.test.js',

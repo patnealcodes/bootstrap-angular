@@ -16,6 +16,12 @@
 					url: '/main',
 					templateUrl: 'js/mainComponent/mainComponent.html'
 				})
+				.state('mdain', {
+					controller: 'MainComponentController',
+					controllerAs: 'mainComponent',
+					url: '/mdain',
+					templateUrl: 'js/mainComponent/mainComponent.html'
+				})
 			;
 		})
 		.run(function($rootScope, $state) {
