@@ -10,8 +10,7 @@ describe('mainApp', function() {
 		var
 			$rootScope,
 			$state,
-			$location,
-			$httpBackend
+			$location
 		;
 
 		beforeEach(
